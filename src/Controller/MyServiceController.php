@@ -38,8 +38,8 @@ class MyServiceController extends ControllerBase implements ContainerInjectionIn
    *   Return Hello string.
    */
   public function loadrecord($id) {
-    
-    $nodeTitle = $this->acme_myservice->laadRecord($id);
+
+    $nodeTitle = $this->acme_myservice->loadRecord($id);
 
     return $nodeTitle;
   }

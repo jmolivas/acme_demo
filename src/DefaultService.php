@@ -24,7 +24,7 @@ class DefaultService
     $this->entity_manager = $entity_manager;
   }
 
-  public function laadRecord($id) {
+  public function loadRecord($id) {
 
     $nodeStorage = $this->entity_manager->getStorage('node');
 
