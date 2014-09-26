@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains acme.module
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+
+function acme_help($route_name, RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+    // Main module help for the acme module.
+    case 'help.page.acme':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Acme demo module') . '</p>';
+      return $output;
+    break;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+
+function acme_theme()
+{
+  $theme = [];
+
+  return $theme;
+}

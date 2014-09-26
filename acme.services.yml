@@ -1,0 +1,4 @@
+services:
+  acme.myservice:
+    class: Drupal\acme\DefaultService
+    arguments: ["@entity.manager"]

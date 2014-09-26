@@ -1,0 +1,5 @@
+name: Acme module
+type: module
+description: My Acme demo module
+core: 8.x
+package: Other

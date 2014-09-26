@@ -1,0 +1,39 @@
+acme.default_controller_hello:
+  path: 'acme/hello/{name}'
+  defaults:
+    _content: '\Drupal\acme\Controller\DefaultController::hello'
+    _title: 'acme Title'
+  requirements:
+    _permission: 'access content'
+
+acme.my_controller_index:
+  path: 'acme/index/{arg1}/{arg2}'
+  defaults:
+    _content: '\Drupal\acme\Controller\MyController::index'
+    _title: 'acme Title'
+  requirements:
+    _permission: 'access content'
+
+acme.default_form:
+  path: '/acme/settings/DefaultForm'
+  defaults:
+    _form: '\Drupal\acme\Form\DefaultForm'
+    _title: 'acme DefaultForm Form'
+  requirements:
+    _permission: 'access administration pages'
+
+acme.new_controller_load:
+  path: 'acme/load/{id}'
+  defaults:
+    _content: '\Drupal\acme\Controller\NewController::load'
+    _title: 'acme Title'
+  requirements:
+    _permission: 'access content'
+acme.my_service_controller_loadrecord:
+  path: 'acme/loadrecord/{id}'
+  defaults:
+    _content: '\Drupal\acme\Controller\MyServiceController::loadrecord'
+    _title: 'acme Title'
+  requirements:
+    _permission: 'access content'
+
